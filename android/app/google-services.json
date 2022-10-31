@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "267718193903",
+    "project_id": "testroboticacomp",
+    "storage_bucket": "testroboticacomp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267718193903:android:db15f8fdc666b39432611a",
+        "android_client_info": {
+          "package_name": "com.appsrbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267718193903-t4rt0o9lreq8993ti4gsgi7toa6dt7ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDScWSHHVOnqUjVkw-Km95Uv-XtUw0CsQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267718193903-t4rt0o9lreq8993ti4gsgi7toa6dt7ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

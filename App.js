@@ -20,13 +20,10 @@ import {
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
+import Navigation from './src/Navigation';
+
+import {NavigationContainer} from '@react-navigation/native';
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
@@ -72,25 +69,9 @@ const App: () => Node = () => {
     'Ingresa el Nombre del Competidor 2',
   );
 
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Text>Buscar al Participante 1</Text>
-        <TextInput value={textName1} onChangeText={onChangetextName1} />
-
-        <Text>Buscar al Participante 2</Text>
-        <TextInput value={textName2} onChangeText={onChangetextName2} />
-
-        <Button title="Buscar a los participantes" />
-      </ScrollView>
-    </SafeAreaView>
-  );
+    return (
+        <Navigation />
+    );
 };
 
 const styles = StyleSheet.create({
